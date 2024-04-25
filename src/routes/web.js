@@ -5,8 +5,8 @@ const {
   getHomeController,
   hoidanit,
 } = require("../controllers/homeController");
-route.get("/", getHomeController);
 
+route.get("/", getHomeController);
 route.get("/hoidanit", hoidanit);
 
 module.exports = route;
