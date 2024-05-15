@@ -3,3 +3,78 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+  background-color: #000000;
+  height: 46px;
+}
+
+/* #nav li {
+  display: inline-block;
+  
+  position: relative;
+} */
+
+#nav > li {
+  display: inline-block;
+  /* cho nó là cai menu con  */
+}
+
+#nav li {
+  /* cho nó là cai menu con  */
+  position: relative;
+}
+/* chi tác đôgn lên cái cha nó thôi nha bạn  */
+#nav > li > a {
+  color: aliceblue;
+}
+#nav li a {
+  color: aliceblue;
+  text-decoration: none !important;
+  line-height: 46px !important;
+  padding: 0 24px;
+}
+
+#nav > li:hover > a {
+  color: black;
+  background-color: darkcyan;
+  text-transform: uppercase !important;
+}
+/* này làm cho nó hiện lên nha bạn dí vô thẻ cha LI sẽ hiện lên thẻ con UL nha bạn */
+#nav > li:hover .subnav {
+  display: block;
+}
+/* #nav li:hover a {
+  color: black;
+  background-color: darkcyan;
+} */
+
+/* này làm cho cai hover bự lên  toàn diện nha bạn  */
+#nav li a {
+  display: block;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+}
+#nav .subnav li a {
+  color: red !important;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#nav .subnav li:hover a {
+  color: #000000;
+  background-color: aquamarine;
+}
+
+#nav .subnav li {
+  list-style: none;
+}
+
+/* làm ản hiện cái menu con nha  bạn  */
