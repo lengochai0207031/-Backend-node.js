@@ -26,10 +26,38 @@
       </ul>
     </div>
     <div id="slider"></div>
+
     <div id="content">
+      <form action="/create-user" method="POST">
+        <div class="form-add-new">
+          <fieldset>
+            <legend>Đăng ký</legend>
+            <div class="input-group">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="input-group">
+              <label for="city">City:</label>
+              <input type="text" name="city" id="city" />
+            </div>
+
+            <div><button class="button-group">Save</button></div>
+
+
+          </fieldset>
+        </div>
+      </form>
+
 
     </div>
-    <div id="footer"></div>
+  </div>
+  <div id="footer"></div>
   </div>
 </body>
 

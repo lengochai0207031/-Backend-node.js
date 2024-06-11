@@ -79,3 +79,35 @@ padding-left: 50px;
 }
 
 /* làm ản hiện cái menu con nha  bạn  */
+ 
+
+  /* giao diện add new user nha bạn cân  chú ý nha bạn hải khùng  */
+
+  .form-add-new {
+
+
+    width: 550px;
+    height: 400px;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 100px;
+  }
+
+  .input-group{
+
+    padding: 10px;
+    margin-left: -300px;
+     
+  }
+  .input-group label{
+
+    color: aqua;
+  }
+  .button-group{
+
+    margin-left: -450px;
+    padding: 3px;
+    margin-bottom: 10px;
+    color: aqua;
+    background-color: blue;
+  }

@@ -7,9 +7,17 @@ const route = express.Router();
 const {
   getHomeController,
   hoidanit,
+  hoiabc,
+  postCreateUser
 } = require("../controllers/homeController");
 
+
+ route.get("/hoiabc", hoiabc);
 route.get("/", getHomeController);
 route.get("/hoidanit", hoidanit);
+
+//khai báp  đường link thêm user nha bạn 
+
+route.post('/create-user',postCreateUser);
 
 module.exports = route;
