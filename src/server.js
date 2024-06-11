@@ -12,7 +12,10 @@ const hostnames = process.env.HOST_NAME;
 
 // config template engine config
 configViewEngine(app);
+
+// khai báo routes nha bạn
 app.use("/", webRouter);
+
 app.listen(port, hostnames, () =>
   console.log(`Example app listening on port ${port}!`)
 );
